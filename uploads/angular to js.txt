@@ -1,0 +1,504 @@
+Javascript-
+ECMA6
+TypeScript
+Angular
+------------------------------------------
+Javascript-
+	javascript basics
+	javascript array and objects
+	javascript functions
+	javascript DOM
+	json and Ajax
+ES6- 
+	let & const
+	arrow function
+	rest and spread
+	template literals
+	OOPS
+	modules
+	promises
+-----------------------------------------------------------------
+javascript basics:- 
+	datatype, variable,operators, typeconversion.
+	input and output , control flow statements.
+--------------------------------------------
+	javascript is the client side scripting language, which makes web pages dynamic and more powerfull.
+	javascript invented by netscape navigator in 1995. after that it is implemented and developed by different-2 versions., now a days javascript developed by ECMA , called es6 script.
+------------------------------------------------------------------
+datatype- javascript is the dynamic and object based language, so it has no compile time process, it loads and execute scripts at run time.
+javascript support following type datatype.
+1- primitive type:-
+	string, number, boolean, datetime, null,undefine etc.
+2- non-primitive type:-
+	object, array, regular expression, functions.
+------------------------------------------------------------------------------
+
+string: it is collection of one or more chars. 
+	var name="ajay",
+	var gender='male'
+string wrapped by single or double quote.
+-------------------------------------------------------------------------
+number - it contains all numraric value.
+	var age=23
+	var percent=47.98
+--------------------------------------------------------------------------
+boolean: it contains true/false value only.
+	var status=true
+	var married=false
+---------------------------------------------------------------------------
+Note: to check type of any variable use typeof operator.
+--------------------------------------------------------------------------
+
+variable- it is like a containers , which represent address in memory , where you can set the value and get the value.  in js varialbe can declare using var keyword.
+also we can use let and const as per es6.
+exa:
+	var studentname="abinav sharma"
+	let age=23
+	const gender="male"
+------------------------------------------------------------------------
+Operators:-
+
+	arithmatic:  +, -, /, *, %
+	relational: >, <=, >=, <=, !=, ==
+	logical: &&, ||, !
+	ternary/conditional: condition?expr1:expr2
+	assignment:=
+	increment/decrement: ++,  --
+	typeof: typeof
+	instanceof: instanceof
+	delete: delete
+	concatenation:  +
+	equatity: ===
+----------------------------------------------------------------------------
+typeconversion:-  typeconversion  means convert one type to another type.
+		exa: string-number.
+
+		to convert type- use 
+		parseInt
+		parseFloat
+		constructor
+------------------------------------------------
+	javascript input and output:-
+		---------------------------
+		input :
+			document.getElementById
+			document.getElementsByName
+			document.getElementsByClassName
+			document.getElementsByTagName
+			document.querySelector
+			document.querySelectorAll
+---------------------------------------------------------------------------------
+		Output:-
+			alert, document.write
+			console.log,console.warn, console.info, console.error
+			DOM property-
+				innerHTML, innerText, value
+-------------------------------------------------------------------------------------------
+		w.a.p. to enter marks of five subject and print total marks,percent.
+	---------------------------------------------------------------------------------
+	control flow statement-
+		decision making statement-
+			if else, else if, nested.
+		switch case
+			switch case, break, default
+		Loop-
+			while, for, for of, for in.
+----------------------------------------------------------------------------------
+Assignment:-
+
+
+----------------------------------------------------------------------------------------------------------
+1- w.a.p. to enter marks of five subject and print total marks and percentage.
+2- w.a.p. to create small image gallary.
+3- w.a.p. to enter 2 number and swap it.
+-----------------------------------------------------------------------------------------------------------
+
+
+1- w.a.p. to enter four number and find out smallest
+2- w.a.p. to enter 3 number and find out middle number/second largest
+3- w.a.p. to enter amount of goods and find out discounts on basis of amount, 
+where if amount>=30000 then discount will be 30%
+if amount >=20000 and<30000  then discount will be 20%
+if amount >=10000 and <20000 then discount will be 10%;
+otherwise print no discount.
+also find out rest/payble amount.
+
+4- w.a.p. to enter 2 number and swap it,
+also swap without using 3rd variable.
+
+
+5- w.a.p. to enter marks of five subject and calculate
+	total marks
+	percentage
+	grade - where grading system fallow as 10+2.
+
+Note- also enter name and generate marksheet format.
+
+6- w.a.p. to enter 3 number and sort it.
+7- w.a.p. enter mobile number validate it.
+	where if number is valid only , when it 10 digit and value is numaric and start with only 	9/8/7
+-----------------------------------------------------------------------------------------------------
+While Loop-
+1- w.a.p. to enter any number and find out factorial of it.
+	5x4x3x2x1=>
+2- w.a.p. to enter any number and check the number is prime or not.
+3- w.a.p. to enter any number and check the number pelindrom or not.
+4- w.a.p. to print fibnucci series to the given n terms.
+	exa: input 10
+ 	          output: 0,1,1,2,3,5,8,13,21,34
+
+for loop------------------------------
+ 
+1-w.a.p. to enter any number and generate table of it using for loop.
+
+2-w.a.p. to enter any two number and find out GCD between both number.
+
+3- Write the to print fallowing patterns.
+
+1- 
+
+1 2 3 4 5 
+1 2 3 4 5
+1 2 3 4 5
+1 2 3 4 5
+
+2- 
+
+1 1 1 1
+2 2 2 2
+3 3 3 3
+4 4 4 4
+
+3-
+
+1 * * * *
+* 2 * * *
+* * 3 * *
+* * * 4 *
+* * * * 5
+
+4-
+*  *  *  *  *
+*  *  *  *
+*  *  * 
+*  *
+*
+
+
+5- 
+
+a b c d e
+a b c d
+a b c 
+a b
+a
+
+6-
+
+e d c b a
+d c b a
+c b a
+b a
+a
+
+7- 
+                        1
+                     1 2
+                  1 2 3
+               1 2 3 4
+             1 2 3 4 5
+
+-----------------------------------------------------------------------------------------------
+
+
+Array is the collection of items, stored on particular index position. in javascript array can declare using either array litrals or constructor-
+exa:
+	var arr=[item1,item2,...itemn]
+	or
+	var arr=new Array(3,2,6,4,6 or length)
+--------------------------------------------------------------------------------------
+Array methods-
+push,pop, filter,sort, indexOf, includes, join, concat, splice.
+---------------------------------------------------------------------------------------
+assignment: create multiselect list and store all selected items in array and print all.
+-------------------------------------------------------------------------------------------------------------------------
+
+object:-  object is the similar to array , but it store items in key and value pair format. 
+where 1 object represent single item.
+exa: 
+var book={"price":200,"title":"angular","author":"ramesh"}
+----------------------------------------------------------------------------------------------
+function:-  function is the set of intstructions , written in sequental manner to perform specific task. javascript provide 2 type function.
+1- pre-define function-
+	string
+	math
+	datetime
+	timing
+2- user define function-
+
+-------------------------------------------------------------------
+string: -string is the collection one or more character. it is represented by '' or "" sign.
+	string are immutable, it means you can't modify string chracters.
+	string can declare using string literal or constructor.
+	
+	var str="welcome"
+	or
+	var str=new String("welcome")
+-----------------------------------------------------------------
+Note: all string methods exist in String object prototype.
+
+string methods-
+1- substr
+2- substring
+3- startsWith & endsWith
+4- indexOf & lastIndexOf
+5- toupper & toLower
+6- charAt
+7- charCodeAt
+8- split
+9- trim
+10- includes
+-----------------------------------------------------------
+Assignment:-
+
+1- W.a.p. to enter name and print it in Abbrivated format ?
+exa:
+input:  Sandeep kumar kapoor
+output: S.K. Kapoor
+
+2- w.a.p. to enter string and print in Capialize case.
+exa:
+input:	sandeep kumar singh
+output:	Sandeep Kumar Singh
+ 
+3- w.a.p. to check whether string is pelindrom or not ?
+             using built in function and also using custome function.
+
+4- w.a.p. let's have a paragraph, find all the pelindrom substring, and return only  those pelindrom string whose length is prime.
+
+5- Reverse words in a given String in Python
+
+6- Javascript program to print even length words in a string
+-------------------------------------------------------------------------------------------------------
+Math Function:- math functions are usefull to perform mathmatical operation.
+	these function exist in Math object.
+	these are below.
+	abs- return absolute number.
+	pow- return powerd value
+	ceil- return nearest up integer
+	floor- return neared down integer
+	round- return nearest integer
+	random- return random number.
+	sqrt- return square root value.		
+----------------------------------------------------------------------
+datetime function: these functions are helpfull to work with date and time.
+these funtion exist in Datetime constructor object.
+-----------------------
+timing function: these function in set of time automatically.
+	these are 2.
+
+	1- setInterval/clearInterval
+	2- setTimeout/clearTimeout
+-------------------------------------------------------------------------------
+w.a.p. to change backgound color with random color in every 3 second.
+-------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span#time {
+            font-size: 59px;
+            font-weight: 700;
+            text-shadow: 3px 3px 3px cadetblue;
+        }
+        
+.container {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <h1>Math Function</h1>
+    <div class="container">
+        <div id="coundown">
+
+        </div>
+        <span id="time"></span>
+        <button id="btn">Stop Clock</button>
+    </div>
+    <script>
+        //document.write(Math.abs(-15))
+        /*
+        document.write(Math.ceil(5.1)+"<br/>")
+        document.write(Math.floor(5.7)+"<br/>")
+        document.write(Math.round(5.6)+"<br/>")
+        document.write(Math.pow(4,5)+"<br/>")
+        document.write(Math
+        .ceil(Math.random()*100*100))
+        */
+
+
+/*
+console.log(date.getDate())
+console.log(date.getDay())
+console.log(date.getFullYear())
+console.log(date.getHours())
+console.log(date.getMinutes())
+console.log(date.getMonth())
+console.log(date.getSeconds())
+console.log(date.getMilliseconds())
+console.log(date.toDateString())
+console.log(date.getTime())
+*/
+
+var id=setInterval(function(){
+var date=new Date();
+var intl=Intl.DateTimeFormat("en-US",{timeStyle:"medium"})
+document.getElementById("time").innerHTML=intl.format(date)
+},1000)
+
+function StopClock(){
+clearInterval(id)
+}
+document.getElementById("btn").addEventListener("click",StopClock)
+
+var mm=1
+var ss=60
+function StartTimer(){
+   var tid= setInterval(function(){
+        if(ss>=0)
+        {
+        document.getElementById("coundown").innerHTML="MM: "+mm+" SS:"+ss
+        ss--
+        }
+        else{
+            mm--
+            ss=60
+        }
+        if(mm==0 && ss==0){
+            clearInterval(tid)
+            alert("Timeout")
+        }
+    },1000)
+}
+
+StartTimer()
+
+    </script>
+</body>
+</html>
+
+----------------------------------------------------------------------
+user define function:- 	javascript also offers you to create your ownn functions, as per 			requirements.
+there are several way to define functions.
+
+1- simple function.
+2- expression function
+3- constructor  function
+4- function clouser
+5- callback function.
+6-  function recursion
+------------------------------------------------------------------------
+1- simple function:-
+
+	function functionName(arg1,arg2)
+	{
+	//function body
+	return value
+	}
+---------------------------------------------------------------------
+callback function :a function passed into a function as a argument , called callback function.
+why callback- callback function helpfull to return or capture result from asyncronous functions.
+also callback call many times as per requirements.
+
+        /*
+        function Test(x,y,callback){
+            var z=0
+            
+            setTimeout(
+                function(){
+                     z=x*y
+                    callback(z)
+                    }
+            ,3000);
+           
+        }
+
+       Test(33,44,function(r){
+           console.log(r)
+       })
+       */
+        ----------------------------------
+Recursive function:-
+
+
+
+        function Recursive(i){
+            if(i<=10)
+            {
+            console.log(i)
+            i++
+            return Recursive(i)
+            }
+        }
+
+        Recursive(1)
+        --------------------------------------------------------
+DOM- document Object Model:-
+
+DOM get and set:- 
+	document.getElementById
+	document.getElementsByName
+	document.getElementsByTagName
+	document.getElementsByClassName
+	document.querySelector
+	document.querySelectorAll
+	innerHTML
+	innerText
+	value
+--------------------------------------------------
+dynamic html :- 
+	createElement
+	appendChild
+	append
+	removeChild
+	createTextNode
+------------------------------------------------
+form validation using plain javascript:-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
