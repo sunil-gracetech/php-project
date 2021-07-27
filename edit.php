@@ -1,3 +1,19 @@
+<?php
+include_once "connection.php";
+
+if(!isset($_GET["id"]))
+{
+header("location:signout.php");
+}
+
+$query="select* from employee where id='".$_GET["id"]."'";
+$db=connectdb();
+$result=mysqli_query($db,$query);
+$row=mysqli_fetch_array($result);
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,24 +27,25 @@
 
 <div class="row">
     <div class="col-md-6 col-md-offset-3">
-        <form action="postEmployee.php" method="post">
+        <form action="updateEmployee.php" method="post">
             <div class="card">
                 <div class="form-group">
                     <?php echo @$_GET["msg"]; ?>
                 </div>
+                <input type="hidden" name="id" value='<?php echo $row["id"]; ?>'>
                 <div class="form-group">
                     <label for="">Name</label>
-                    <input type="text" name="name" class="form-control">
+                    <input type="text" name="name" class="form-control" value='<?php echo $row["name"]; ?>'>
                 </div>
 
                 <div class="form-group">
                     <label for="">Email</label>
-                    <input type="text" name="email" class="form-control">
+                    <input type="text" name="email" class="form-control" value='<?php echo $row["email"]; ?>' readonly>
                 </div>
 
                 <div class="form-group">
                     <label for="">Salary</label>
-                    <input type="number" name="salary" class="form-control">
+                    <input type="number" name="salary" class="form-control" value='<?php echo $row["salary"]; ?>'>
                 </div>
                 <div class="form-group">
                     <label for="">Gender</label>

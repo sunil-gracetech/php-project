@@ -6,7 +6,7 @@ session_start();
 if(isset($_POST["sub"]))
 {
 	$email=$_POST["email"];
-	$pass=$_POST["password"];
+	$pass=md5($_POST["password"]);
 	$query="select count(*) as total from customer where email='".$email."' and password='".$pass."'";
 	$db=connectdb();
 	$result=mysqli_query($db,$query);

@@ -30,7 +30,7 @@ if(isset($_COOKIE["user"]))
 		</tr>
 		<tr>
 			<td><label>Password</label></td>
-			<td><input type="text" name="password" value="<?php echo @$pass; ?>"></td>
+			<td><input type="password" name="password" value="<?php echo @$pass; ?>"></td>
 		</tr>
 
 		<tr>

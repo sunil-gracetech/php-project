@@ -69,8 +69,8 @@ while($row=mysqli_fetch_assoc($result))
 	<td><?php echo $row["gender"]; ?></td>
 	<td><?php echo $row["isActive"]==1?"Active":"InActive"; ?></td>
 	<td>
-		<a href="">Edit</a>|
-		<a href="">Delete</a>
+		<a href='edit.php?id=<?php echo $row["id"]; ?>' onclick="return confirm('Are you sure to edit this record')">Edit</a>|
+		<a href='delete.php?id=<?php echo $row["id"]; ?>' onclick="return confirm('Are you sure to delete this record')">Delete</a>
 </td>
 
 </tr>

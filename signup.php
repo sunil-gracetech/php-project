@@ -11,7 +11,7 @@
 
 <div class="row">
     <div class="col-md-6 col-md-offset-3">
-        <form action="postEmployee.php" method="post">
+        <form action="postSignup.php" method="post">
             <div class="card">
                 <div class="form-group">
                     <?php echo @$_GET["msg"]; ?>
@@ -27,32 +27,17 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="">Salary</label>
-                    <input type="number" name="salary" class="form-control">
+                    <label for="">Password</label>
+                    <input type="password" name="pass" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label for="">Gender</label>
-                <select name="gender" id="" class="form-control">
-                    <option value="">Select</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                </select>
+                    <label for="">Confirm Password</label>
+                    <input type="password" name="cpass" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label for="">Department</label>
-                    <select name="dept" id="" class="form-control">
-                    <option value="">Select</option>
-                    <option value="IT">IT</option>
-                    <option value="HR">HR</option>
-                </select>
+                    <label for="">Address</label>
+                    <input type="text" name="address" class="form-control">
                 </div>
-                <div class="form-group">
-                    <label for="">IsActive</label>
-                    <select name="isActive" id="" class="form-control">
-                    <option value="">Select</option>
-                    <option value="active">Active</option>
-                    <option value="inactive">InActive</option>
-                </select>                </div>
                 <div class="form-group">
                   <button type="submit" class="btn btn-success">Submit</button>
                 </div>
